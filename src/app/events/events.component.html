@@ -1,0 +1,102 @@
+<app-sidebar></app-sidebar>
+<div class="maindiv">
+  <div class="container-fluid">
+    <div id="eventimages" class="row">
+      <div class="col-md-12 event_image">
+        <img id="eventimage" src="/assets/images/add_img.jpg">
+        <div class="centered"><h1>EVENTS-2018</h1></div>
+      </div>
+    </div>
+   <div class="row" id="contents">
+    <div class="col-md-8" >
+        <div class="col-md-3 img-outer" *ngFor='let i of items' >
+            <div class="hovereffect">
+                <div class="z-text">
+                    <div class="centered">
+                                <div class="dropdown" >
+                                    <i  class="dd-ibutton fa fa-info-circle fa-2x " data-toggle="modal"   [attr.data-target]="'#info_Modal_'+i.event_id" ></i>
+                                </div>
+                    </div>
+                    <div class="bottom-left">
+                        <div class="dropdown" >
+                            <i id="ebutton" routerLink="/app-register" [queryParams]="{}" class="dd-ebutton fa fa-pencil-square-o fa-2x" aria-hidden="true" ></i>
+                        </div>
+                    </div>
+                    <div class="bottom-right">
+                        <div class="dropdown" >
+                            <i  class="dd-dbutton fa fa-trash-o fa-2x" data-toggle="modal"   [attr.data-target]="'#delete_Modal_'+i.event_id" ></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="z-img">
+                    <h3>{{i.event_name}}</h3>
+                    <img class="img-responsive" src={{i.event_img}} alt="">
+                </div>                
+            </div>
+            <!-- DELETE modal -->
+            <div class="modal fade" [id]="'delete_Modal_'+i.event_id" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <i class="fa fa-exclamation-triangle fa-5x" aria-hidden="true"></i>
+                            <p>Are you sure you want to <strong>DELETE EVENT-{{i.event_name}}</strong>? </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-default">DELETE</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- INFO MOdal -->
+            <div class="modal fade" [id]="'info_Modal_'+i.event_id" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>
+                                    Number of Registrations : <span class="bubble">{{i.college_list ? i.college_list.length : ''}}</span>
+                                </p>   
+                                <p *ngFor="let ed of i.event_details"><span class="bubble">{{ed}}</span></p> 
+                                <p>Prize Amount : <span class="bubble">{{i.prize_amount}}</span></p> 
+                                <div class="dropdown" >
+                                    <p>Name of the Colleges Registered</p>
+                                    <i class="fa fa-angle-down fa-1x clg_list" data-toggle="dropdown"></i>
+                                    <ul class="dropdown-menu dd_menu">
+                                        <p *ngFor="let cl of i.college_list">{{cl}}</p> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+    </div>
+        <div class="col-md-4">
+            <p>Total number of events  <span class="bubble"><p>{{items ? items.length : ''}}</p></span><i routerLink="/app-register" id="abutton" title="ADD MORE" class="fa fa-plus fa-1x" ></i></p>  
+            <hr>
+            <p>
+            <div class="dropdown">
+                    <p>Events Not yet Registered<span class="bubble"><p>{{count}}</p></span>
+                        <span class="button1">
+                            <i class="fa fa-angle-down fa-1x"  data-target="#nr_list" data-toggle="collapse"></i>
+                        </span>
+                    </p>
+                    <div class="collapse list-group " id="nr_list" >
+                            <i class="fa fa-trash-o fa-1x trash_btn "></i><br><br><br>
+                        <div class="list-item" *ngFor="let i of not_registered">
+                            <input checked type="checkbox" >&nbsp;
+                            <span class="">{{i}}</span>
+                        </div>
+                        <!-- <div class="list-item">
+                            <input checked type="checkbox">&nbsp;
+                            <span class="" >EVENT-2</span>          
+                        </div> -->
+                    </div>
+            </div>
+            <hr>
+        </div>
+   </div>
+</div>
+</div>

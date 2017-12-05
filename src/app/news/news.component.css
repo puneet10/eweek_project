@@ -1,0 +1,51 @@
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+}
+#eventimage{
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 150px;
+    font-family: cursive;
+}
+.icon{
+    float: right;
+}
+textarea{
+    resize: none;
+}
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+button {
+    background-color: rgb(127, 194, 129); /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.cbutton{
+    background-color: rgb(243, 99, 99);
+}
+.submitbuttn{
+    text-align: center;
+}
+.recent-updated{
+    overflow-y: scroll;
+    max-height: 50%;
+    
+}

@@ -1,0 +1,123 @@
+<app-sidebar></app-sidebar>
+<div class="maindiv">
+    <div class="container-fluid">
+        <form class="form-horizontal">
+            <fieldset>
+                <!-- Form Name -->
+                <legend id="add" class="add">Add Event</legend><legend id="update" class="update" >UPDATE EVENT</legend>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Name</label>
+                    <div class="col-md-4">
+                        <input id="textinput" name="textinput" type="text" placeholder="" class="form-control " required="">
+                    </div>
+                </div>
+                <!-- image -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventDate">Image</label>
+                    <div class="col-md-4">
+                            <input type='file' />
+                    </div>
+                </div>
+                <!-- Select Basic -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventType">Type</label>
+                    <div class="col-md-4">
+                        <select id="eventType" name="eventType" class="form-control">
+                            <optgroup label="TECHNICAL">
+                            <option value="CODING">Coding</option>
+                            <option value="DEBUGGING">Debugging</option>
+                            <option value="PROGRAMMING">Programming</option>
+                            <option value="QUIZ">Quiz</option>
+                            <option value="ROBOTICS">Robotics</option>
+                            <option value="WORKSHOPS">Workshops</option>
+                            <option value="CONTRAPTION">Contraption</option>
+                            </optgroup>
+                            <optgroup label="MANAGEMENT">
+                                <option value="">AdZap</option>
+                                <option value="MARKETING">Marketing</option>
+                                <option value="PRODUCTION_LAUNCH">Production Launch</option>
+                            </optgroup>
+                            <optgroup label="SPORTS">
+                                <option value="ATHLETICS">Athletics</option>
+                                <option value="FOOTBALL">Football</option>
+                                <option value="CHESS">Chess</option>
+                            </optgroup>
+                            <optgroup label="CULTURAL">
+                                <option value="DANCE">Dance</option>
+                                <option value="DUBSMASH">Dubsmash</option>
+                                <option value="FASHION_SHOW">Fashion Show</option>
+                            </optgroup>
+
+                            <optgroup label="FUN">
+                                <option value="DUMB_CHARADES">Dumb Charades</option>
+                                <option value="SELFIE">Selfie</option>
+                                <option value="PAINT_BALL">Paint Ball</option>
+                            </optgroup>
+                            <optgroup label="LITERARY">
+                                <option value="CREATIVE_WRITING">Creative Writing</option>
+                                <option value="DEBATE">Debate</option>
+                                <option value="POETRY">Poetry</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <!-- ABOUT EVENT -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="about">Description</label>
+                    <div class="col-md-4">
+                        <textarea class="form-control" placeholder="about event"></textarea>
+                    </div>
+                </div>
+                <!-- RULES -->
+                <div class="form-group">
+                        <label class="col-md-4 control-label" for="about">Rules</label>
+                        <div class="col-md-4">
+                            <textarea type="text" class="form-control" placeholder="RULES of the event"></textarea>
+                        </div>
+                </div>
+                <!-- TEAM OF MEMBERS -->
+                <div class="form-group">
+                        <label class="col-md-4 control-label" for="eventType">Team of Members</label>
+                        <div class="col-md-4">
+                            <select class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>ANY</option>
+                            </select>
+                        </div>
+                </div>
+                <!-- Appended Input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="eventDate">Date</label>
+                    <div class="col-md-4">
+                        <div class="input-group date" data-provide="datepicker">
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="venueName">Venue</label>
+                    <div class="col-md-4">
+                        <input id="venueName" name="venueName" type="text" placeholder="" class="form-control">
+                    </div>
+                </div>
+        
+                <!-- Button (Double) -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="submitButton"></label>
+                    <div class="col-md-8">
+                        <button id="submitButton" name="submitButton" class="btn btn-primary add">ADD</button>
+                        <button id="cancelButton" name="cancelButton" class="btn btn-danger">CANCEL</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>

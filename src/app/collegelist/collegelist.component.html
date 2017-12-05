@@ -1,0 +1,43 @@
+<app-sidebar></app-sidebar>
+<div class="maindiv">
+<div class="container-fluid">
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   </head>
+   <table  class="table table-striped table-hover" cellspacing="0" width="100%">
+    <thead class="thead">
+      <tr>
+        <th>S.No.</th>
+        <th>Collegename</th>
+        <th>Phone</th>
+        <th>No. of events Registered</th>
+        <th>Amount Paid</th>
+        <th>Comments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = " let clg_list2 of clg_list">
+        <td>{{clg_list2.s_no}}</td>
+        <td>{{clg_list2.collegename}}</td>
+        <td>{{clg_list2.phone}}</td>
+        <td>{{clg_list2.event_list ? clg_list2.event_list.length : '' }}
+          <span class="button1">
+          <i class="fa fa-angle-down"  data-toggle="collapse" [attr.data-target]="'#test_'+clg_list2.s_no"></i></span>
+          <div  [id]="'test_'+clg_list2.s_no" class="collapse" >
+            <ul *ngFor = "let s of clg_list2.event_list">
+              <li>{{s}}</li>
+            </ul>
+          </div>
+        </td>
+        <td>{{clg_list2.amount_paid}}</td>
+        <td><p  *ngFor="let com of clg_list2.comments" >{{com}}</p></td>
+      </tr>
+    </tbody>
+  </table>
+  <button >PRINT</button>
+
+
+</div>
+</div>

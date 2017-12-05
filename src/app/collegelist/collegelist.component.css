@@ -1,0 +1,21 @@
+
+.table-hover>tbody>tr:hover>td,.table-hover>tbody>tr:hover>th {
+    background-color: #9b969621;
+  }
+  .table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #f7f7f76e;
+  }
+  .table>thead>tr>th {
+    border-bottom-width: 1px;
+    background-color: rgba(105, 105, 105, 0.425);
+  }
+  .table>thead>tr td {
+    font-weight:800;
+    color:#454545; 
+  }   
+  .table>thead>tr:hover {
+background-color:   #f7f7f7;
+}   
+.button1{
+  float: right;
+}

@@ -1,0 +1,49 @@
+<app-sidebar></app-sidebar>
+<div class="maindiv">
+  <div class="container-fluid imgvid">
+    <head>
+    </head>
+    <div class="row">
+      <div class="col-md-8 images">
+        <h3>IMAGES</h3>
+        <hr>
+        <div class="images2">
+        <div class="col-md-3 " *ngFor='let i of items' id="{{i}}">
+          <div class="hovereffect">
+              <img class="img-responsive" src="{{i.img}}" alt="">
+              <div class="overlay">
+                <div class="centered">
+                  <i class="fa fa-eye fa-3x imgs" [attr.src]="i.img" title="VIEW" id="the_id" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-trash-o fa-3x" title="DELETE" aria-hidden="true"></i>
+                </div>
+              </div>
+          </div>
+          <p>Caption of image <strong>{{i.id}}</strong></p>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4 display">
+        <fieldset>
+          <h3>DISPLAY</h3>
+          <hr>
+          <div><img src="../assets/images/placeholder.gif" class="img2"></div>
+        </fieldset>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 videos">
+        <h3>VIDEOS</h3>
+        <hr>
+        <div class="col-md-6" *ngFor='let v of videos'>
+          <video controls>
+              <source src="{{v.vid}}" type="video/mp4">
+          </video>
+          <div>
+            <p class="caption">Caption for video{{v.id}}
+            <i class="fa fa-trash-o fa-2x bottom-right" title="DELETE" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

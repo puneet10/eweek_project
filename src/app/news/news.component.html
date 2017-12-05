@@ -1,0 +1,85 @@
+<app-sidebar></app-sidebar>
+<div class="maindiv">
+<div class="container-fluid">
+  <div id="eventimages" class="row">
+      <div class="col-md-12">
+      
+        <img id="eventimage" src="/assets/images/add_img.jpg">
+        <div class="centered"><h1>NEWS</h1></div>
+      </div>
+  </div>
+  <div class="col-lg-8 col-md-12 well">
+    <fieldset >
+      <div class="icon">
+        <i title="EDIT" class=" fa fa-pencil-square-o fa-1x" ></i>&nbsp;&nbsp;
+        <i title="DELETE" class="fa fa-trash-o fa-1x" data-toggle="modal" data-target='#delete_Modal'></i>
+      </div>
+       <!-- DELETE modal -->
+       <div class="modal fade" id='delete_Modal' role="dialog">
+          <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-body">
+                      <i class="fa fa-exclamation-triangle fa-3x" aria-hidden="true"></i>
+                      <p>Are you sure you want to <strong>DELETE&nbsp;<i class="fa fa-check-square-o" aria-hidden="true"></i>&nbsp;NEWS ?</strong>
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="submit" class="btn btn-default">DELETE</button>
+                      <button type="button" class="btn btn-default" data-dismiss="modal">CANCEL</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <div class="wrapper recent-updated"> 
+        <div id="upadtes-box" role="tabpanel" class="collapse show">
+          <ul class="news list-unstyled">
+            <li class="d-flex justify-content-between" *ngFor="let n of news" > 
+              <div class="left-col d-flex">
+                <input type="checkbox">&nbsp;
+                <div class="title"><strong>{{n.headline}}-{{n.id}}</strong><br>
+                  <img  src="{{n.img}}"><span>{{n.news}}</span>
+                </div>
+              </div>
+              <div class="right-col text-right">
+                <div class="update-date">{{n.date}}&nbsp;</div>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </fieldset>   
+  </div>
+  <div class="col-lg-4 col-md-12 ">
+  <form class="form-horizontal">
+    <fieldset >
+        <legend>ADD NEWS</legend>
+        <div class="wrapper "> 
+          <div id="upadtes-box" role="tabpanel" class="collapse show">
+            <div class="form-group" >
+              <label class="col-md-2 control-label"  for="headline">Headline</label>
+              <input  class="col-md-8 form-control"  type="text">
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="headline">Image</label><br>
+              <input class="col-md-8" type="file">
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="news">News</label>
+              <textarea class="col-md-8 form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label class="col-md-2 control-label" for="date">Date</label>
+              <input class="col-md-8 form-control" type="date">
+            </div>
+            <div class="form-group submitbuttn">
+                <button  type="submit">ADD</button>
+                <button class="cbutton" type="reset" (click)="fun(Headline)">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </fieldset>   
+    </form>
+    </div>
+</div>
+</div>

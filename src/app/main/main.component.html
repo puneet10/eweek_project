@@ -1,0 +1,192 @@
+<app-sidebar></app-sidebar>
+<div class="maindiv">
+<div class="container-fluid">
+    <div id="info_image">
+      <a routerLink="/app-events"><img class="infoimage" src="/assets/images/slider1-2018.jpg" title="info"></a>
+    </div>
+    <!-- info box -->
+    <div id="sum_box" class="row">
+      <div class=" col-md-4">
+        <div class="panel income db mbm" routerLink="/app-events">
+          <div class="panel-body">
+                <p class="icon">
+                  <i class="icon fa fa-user">
+                  </i>
+                </p>
+                <h4 class="value">
+                  <span>13</span></h4>
+                <p class="description">
+                  New Registrations</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-4">
+        <div class="panel profit db mbm" routerLink="/app-inbox">
+          <div class="panel-body" >
+            <p class="icon">
+                <i class="icon fa fa-comment-o"></i>
+            </p>
+            <h4 class="value">
+            <span data-counter="" data-start="10" data-end="50" data-step="1" data-duration="0">189</span></h4>
+            <p class="description">
+            New Messages</p>
+          </div>
+        </div>
+      </div>
+      <div class=" col-md-4">
+        <div class="panel task db mbm" routerLink="/app-collegelist">
+          <div class="panel-body">
+            <p class="icon">
+              <i class="icon fa fa-money"></i>
+            </p>
+            <h4 class="value">
+            <span>&#8377;13,500</span></h4>
+            <p class="description">
+            Amount Collected</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- donut -->
+    <div id="donut" class="row" >
+      <div class=" col-md-4">
+        <div class="item html">
+          <h5>70%</h5><br>
+          <h5>Registrations</h5>
+          <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>Layer 1</title>
+              <circle id="circle" class="circle_animation1" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class=" col-md-4">
+        <div class="item html">
+          <h5>80%</h5><br>
+          <h5>Unread</h5>
+          <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>Layer 1</title>
+              <circle id="circle" class="circle_animation2" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class=" col-md-4">
+        <div class="item html">
+          <h5>30%</h5><br>
+          <h5>To reach target</h5>
+          <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <g>
+            <title>Layer 1</title>
+            <circle id="circle" class="circle_animation3" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="#6fdb6f" fill="none"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- progress bar -->
+    <!-- CALENDER-MAP -->
+    <div id="cal" class="row">
+        <div class="col-md-8">
+            <h1> Map</h1>
+            
+            <div id="map" class="gmap">
+              <img class="mapimg" src="/assets/images/Screenshot from 2017-10-31 10-11-49.png" title="MAP">
+            </div>
+          </div>
+      <div class="col-md-4">
+        <h1>Calendar</h1>
+
+        <div class="month">      
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>
+              August<br>
+              <span style="font-size:18px">2017</span>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="weekdays">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+        </ul>
+
+        <ul class="days">  
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li><span class="active">10</span></li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li>16</li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+          <li>29</li>
+          <li>30</li>
+          <li>31</li>
+        </ul>
+      </div>
+    </div>
+    <div id="barchart" class="row">
+        <div class="col-md-6">
+          <div>
+              <div style="display: block">
+                <canvas baseChart
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+              </div>
+              <button (click)="randomize()">Update</button>
+              <button id="showDoughnut" >DOUGHNUT CHART</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+            <div class="doughnutchart"   id="doughnutchart">
+                
+                <canvas  baseChart
+                            [data]="doughnutChartData"
+                            [labels]="doughnutChartLabels"
+                            [chartType]="doughnutChartType"
+                            (chartHover)="chartHovered($event)"
+                            (chartClick)="chartClicked($event)">
+                                    
+                </canvas>
+              </div>
+        </div>
+    </div>
+</div>   
+</div>
+  

@@ -1,0 +1,154 @@
+#eventimage{
+    width: 100%;
+    height: max-content;
+    max-height: 250px;
+    border-radius: 20px;
+    padding: 10px;
+}
+#contents{
+    margin-top: 1px;    
+}
+
+#addevent{
+    width: 300px;
+    align-content: center;
+    text-align: center;
+    font-family: FontAwesome;
+    background-color: rgb(114, 203, 219);
+    
+}
+#addevent :hover{
+    background-color: rgb(170, 205, 211);
+}
+.centered,h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    display: flex;
+    
+}
+h3{
+    text-shadow: 2px 2px 1px #000;
+    text-align: center;
+    
+}
+.bottom-left {
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+.hovereffect{
+    height: 176px;
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+    transition: all 1s ease 0s;
+}
+.z-img{
+    position: relative;
+    height: 176px;
+    border: 1px solid black;
+    margin: auto;
+    
+}
+.z-img img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s ease 0s;
+}
+.hovereffect:hover .z-img img{
+    transform: scale(1.9);
+    opacity: 0.8;
+}
+.z-text{
+    background: inherit;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: -199px;
+    z-index: 1111;
+    display: none;
+    color: rgb(240, 232, 232);
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #000;
+}
+div i{
+    padding: 15px;
+}
+div p{
+    font-size: x-large;
+}
+div p i{
+    float: right;
+}
+
+@media (min-width: 992px)
+{
+.col-md-2 {
+    width: 24.666667%;
+    padding-top: 5px;
+    
+}
+.col-md-12{
+    padding-right: 0px;
+}
+.col-md-8, .col-md-4{
+    padding-right: 0px;
+    padding-left: 24px;
+    padding-top: 5px;
+}
+}
+.dd-imenu,.dd-dmenu,.dd-emenu{
+    text-align: justify;
+    padding: 1px;
+    width: max-content;
+    background-color: lightskyblue;
+    z-index: 1030;
+}
+.bubble { 
+    position: inherit; 
+    display: inline; 
+    font-weight: bolder;
+    background-color: rgb(162, 162, 255);
+    padding: 15px;
+    border-radius: 100%;
+}
+  
+  .bubble p {
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center; 
+  }
+.collegelist{
+    text-shadow: none;
+    color: black;
+}
+/* MODAL */
+.modal{
+    position: fixed;
+    padding: 140px 26px 140px;
+    background-color: rgba(0, 0, 0, 0.281);
+    z-index: 10001;
+}
+.modal i{
+    text-align: center;
+    float: left;
+}
+
+.button1{
+    float: right;
+}
+.trash_btn{
+    float: left;
+}
+.fa.disabled{
+    display: none !important;
+}

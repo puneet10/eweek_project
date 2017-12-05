@@ -1,0 +1,12 @@
+select.form-control:not([size]):not([multiple]) {
+    height: calc(3.0rem + 2px);
+}
+
+textarea{
+    resize: none;
+}
+legend{
+text-align: center;
+font-size: xx-large;
+color: dodgerblue;
+}
