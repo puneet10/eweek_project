@@ -50,18 +50,6 @@ export class FirstComponent implements OnInit {
     $('#searchicon').show('fast');
       $('.searchbox,#taskddm,#msgddm,#notifyddm').hide();
     });
-    $(document).ready(function(){
-      if ($(window).width() < 500) {
-        $('#togglebutton').show();
-        // $('.navbar-fixed-left').css('width', 'max-content');
-        $('.text').toggle(300);
-      }else {
-        $('#togglebutton').hide();
-      }
-      $('#togglebutton').click(function(){
-          $('.text').toggle(300);
-        });
-    });
   });
   $(document).on('click', function() {
     $('#msgddm').hide('fast');

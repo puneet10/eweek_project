@@ -13,6 +13,7 @@
 	display: block;
 	max-width: initial;
 	width: max-content;
+	margin-top: 70px;
 }
 .navbar-header{
 	width: 100%;	

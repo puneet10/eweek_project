@@ -1,3 +1,10 @@
+.header1{
+    background-color: black;
+    height: inherit;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
 img{
     height: 50px;
     width: 50px;
@@ -10,11 +17,27 @@ img{
     background-color: rgb(207, 206, 206);
     color: rgba(0, 0, 0, 0.411);
     text-align: center;
+  
     z-index: 1000;
  }
 .chat_menu{
-    position: absolute;
+    position: fixed ;
     right: 25px;
     bottom: 25px;
     z-index: 1;
+}
+
+h6{
+    color: whitesmoke;
+}
+li>a:hover{
+    background-color: initial;
+}
+.menu{
+    padding: 5px;
+    overflow: scroll;
+    width: max-content; 
+}
+.right{
+    float: right;
 }

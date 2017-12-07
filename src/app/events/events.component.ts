@@ -57,33 +57,14 @@ export class EventsComponent implements OnInit {
   }
   ngOnInit() {
     $(document).ready(function(){
-      $('#plusicon').hide();
-      $('#demo2').hide();
-      $('#addevent').hover(function(){
-        $('#addeventtext').toggle();
-         $('#plusicon').toggle();
-      });
+      
       $('.hovereffect').hover(function (e) {
         e.preventDefault();
-        $('.dd-imenu').hide();
-        $('.dd-dmenu').hide();
         $(this).children('.z-text').css('top', '0').fadeToggle(500);
-      });
-      $('.colleges').hover(function(){
-        $('.collegelist').toggle();
-      });
-      $(this).find('#update').hide();
-      $('#ebutton').click(function(){
-        $(this).find('#update').show();
       });
       $('.button1').click(function() {
         $('i', this).toggleClass('fa fa-angle-left fa fa-angle-down');
       });
-    });
-    $(document).click(function(){
-      $('.dd-imenu').hide();
-      $('.dd-dmenu').hide();
-      $('#nr_list').hide();
     });
   }
 }

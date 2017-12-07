@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #0000002b
+}
 .maindiv{
     font-family: FontAwesome;
     position:relative;
     padding-left: 170px;
     display: block;
     overflow-x: hidden;
+    margin: 70px 0px 25px 0px; 
 }
 .fa{
     display: inline-block;
@@ -17,8 +21,8 @@
     text-shadow: 2px 2px 15px black;
 }
 .fa:hover{
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px 10px darkgray;
+    color:rgb(111, 38, 247);
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
     font-weight: bold;
     cursor: pointer;
 }

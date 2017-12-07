@@ -2,14 +2,14 @@
 <div class="maindiv">
 <div class="container-fluid">
   <div id="eventimages" class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 col-xs-12">
       
         <img id="eventimage" src="/assets/images/add_img.jpg">
         <div class="centered"><h1>NEWS</h1></div>
       </div>
   </div>
-  <div class="col-lg-8 col-md-12 well">
-    <fieldset >
+  <div class="col-md-8 col-xs-12 ">
+    <fieldset class="content" >
       <div class="icon">
         <i title="EDIT" class=" fa fa-pencil-square-o fa-1x" ></i>&nbsp;&nbsp;
         <i title="DELETE" class="fa fa-trash-o fa-1x" data-toggle="modal" data-target='#delete_Modal'></i>
@@ -37,40 +37,46 @@
           <ul class="news list-unstyled">
             <li class="d-flex justify-content-between" *ngFor="let n of news" > 
               <div class="left-col d-flex">
-                <input type="checkbox">&nbsp;
-                <div class="title"><strong>{{n.headline}}-{{n.id}}</strong><br>
-                  <img  src="{{n.img}}"><span>{{n.news}}</span>
+                <div class="title"><input type="checkbox">&nbsp;<strong>{{n.headline}}-{{n.id}}</strong>
+                  <p class="update-date right-col text-right">{{n.date}}&nbsp;</p>
+                  <div class="row">
+                    <div class="col-md-2 col-xs-2">
+                      <img  src="{{n.img}}">
+                    </div>
+                    <div class="col-md-10 col-xs-10">
+                      <p>{{n.news}}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="right-col text-right">
-                <div class="update-date">{{n.date}}&nbsp;</div>
-              </div>
+              <hr/>
+            </li>
           </ul>
         </div>
       </div>
     </fieldset>   
   </div>
-  <div class="col-lg-4 col-md-12 ">
+  <div class="col-md-4 col-xs-12">
   <form class="form-horizontal">
     <fieldset >
         <legend>ADD NEWS</legend>
         <div class="wrapper "> 
           <div id="upadtes-box" role="tabpanel" class="collapse show">
-            <div class="form-group" >
-              <label class="col-md-2 control-label"  for="headline">Headline</label>
-              <input  class="col-md-8 form-control"  type="text">
+            <div class="form-group row" >
+              <label class="col-md-2 col-xs-2 control-label"  for="headline">Headline</label>
+              <input  class="col-md-8 col-xs-8 form-control"  type="text">
             </div>
-            <div class="form-group">
-              <label class="col-md-2 control-label" for="headline">Image</label><br>
-              <input class="col-md-8" type="file">
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2 control-label" for="headline">Image</label><br>
+              <input class="col-md-8 col-xs-8" type="file">
             </div>
-            <div class="form-group">
-              <label class="col-md-2 control-label" for="news">News</label>
-              <textarea class="col-md-8 form-control"></textarea>
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2 control-label" for="news">News</label>
+              <textarea class="col-md-8 col-xs-8 form-control"></textarea>
             </div>
-            <div class="form-group">
-              <label class="col-md-2 control-label" for="date">Date</label>
-              <input class="col-md-8 form-control" type="date">
+            <div class="form-group row">
+              <label class="col-md-2 col-xs-2 control-label" for="date">Date</label>
+              <input class="col-md-8 col-xs-8 form-control" type="date">
             </div>
             <div class="form-group submitbuttn">
                 <button  type="submit">ADD</button>
