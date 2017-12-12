@@ -59,5 +59,19 @@ export class FirstComponent implements OnInit {
     $('#admin_ddm').hide('fast');
     $('#searchicon').show('fast');
   });
+  $("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("active");
+    
+   
+});
+$(document).ready(function(){
+  $('.btn_toggle').click(function(){
+   //  $('#sidebar-wrapper').animate({
+   //    width:'toggle'
+   //  }, 300);
+   $('#sidebar-wrapper').slideToggle()
+    });
+   });
   }
 }

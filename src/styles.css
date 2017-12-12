@@ -1,15 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-    background-color: #0000002b
-}
-.maindiv{
-    font-family: FontAwesome;
-    position:relative;
-    padding-left: 170px;
-    display: block;
-    overflow-x: hidden;
-    margin: 70px 0px 25px 0px; 
-}
+
 .fa{
     display: inline-block;
     font-family: FontAwesome;
@@ -30,3 +20,193 @@ body{
     opacity: 0;
 }
 /* ---------------------------------------------------------------------------- */
+
+#wrapper {
+	padding-left: 220px;
+	transition: all 0.4s ease 0s;
+	font-family: cursive, Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #1E1F33;
+	color: white;
+	font-size: 16px;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+  }
+  
+  #sidebar-wrapper {
+	
+		margin-left: -249px;
+		top: 47px;
+		left: 249px;
+		width: 200px;
+		position: fixed;
+		height: 100%;
+		overflow-y: auto;
+		z-index: 1000;
+		transition: all 0.4s ease 0s;
+		background-color: inherit;
+	}
+  
+  #wrapper.active {
+	padding-left: 20px;
+  }
+  
+  #wrapper.active #sidebar-wrapper {
+	left: 0;
+  }
+  .navbar-fixed-top{
+    background-color: #1E1F33;
+    margin-bottom: 0;
+    border-bottom: 0px;
+}
+
+  #page-content-wrapper {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	transition: all 0.4s ease 0s;
+	display: block;
+	background-color: #1E1F33;
+  }
+  
+  .sidebar-nav {
+    position: fixed;
+    top: 75px;
+    /* width: 200px; */
+	list-style: none;
+	padding: 0;
+	background-color: inherit;
+	color: white;
+  }
+  .sidebar-nav li {
+	line-height: 50px;
+	text-indent: -20px;
+	
+  }
+  
+  .sidebar-nav li a {
+	color: #999999;
+	text-decoration: none;
+	padding-left: 30px;
+	display: list-item;
+	text-align: -webkit-match-parent;
+  }
+  
+  .sidebar-nav li a span:before {
+	position: absolute;
+	left: 0;
+	color: #41484c;
+	text-align: center;
+	width: 20px;
+	line-height: 18px;
+  }
+  
+ 
+	.sidebar-nav li a:active,
+	.sidebar-nav li a:focus {
+		text-decoration: none;
+	}
+  
+  .sidebar-nav > .sidebar-brand {
+	height: 65px;
+	line-height: 60px;
+	font-size: 16px;
+  }
+  
+  .sidebar-nav > .sidebar-brand a {
+	color: white;
+  }
+  
+  .sidebar-nav > .sidebar-brand a:hover {
+	
+	color: #000;
+  }
+  
+  #menu-toggle {
+	  text-decoration: none;
+	  color: #fff;
+		margin-left: 0px;
+    width: 46px;
+	  float: left;
+	}
+		
+  
+  @media (max-width:767px) {
+  
+  #wrapper {
+	padding-left: 15px;
+  }
+  
+  #sidebar-wrapper {
+	left: 0;
+  }
+  
+  #wrapper.active {
+	position: inherit;
+	left: 250px;
+  }
+  
+  #wrapper.active #sidebar-wrapper {
+	left: 250px;
+	width: 250px;
+	transition: all 0.4s ease 0s;
+	
+  }
+  
+  #menu-toggle {
+	display: inline-block;
+  }
+  
+  
+}
+.list-group-item {
+    
+	background-color: inherit;
+	border: none;
+	scroll-behavior: hidden;
+	overflow: hidden;
+	 padding: 0;
+	 line-height: 10px;
+  }
+  .nav_toggle{
+    position: relative;
+    float: right;
+		margin-top: 20px;
+		padding: 1.8px;
+		background-color: aqua;
+}
+#name{
+	font-size: 40px;
+	color:aqua;
+	text-decoration: none;
+}
+
+.navbar-brand{
+	margin-top: 10px;
+
+}
+.navbar-header{
+	padding:10px;
+	background-color: inherit;
+}
+#name :hover{
+	color:wheat;
+
+}
+.container-fluid {
+	padding-right: 15px;
+	padding-left: 0;
+	margin-right: auto;
+    margin-left: auto;
+    
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand :hover{
+		margin-left: 0px;
+
+}
+.well{
+	background-color: inherit;
+	color: white;
+}
+

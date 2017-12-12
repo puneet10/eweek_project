@@ -1,7 +1,12 @@
-<app-sidebar></app-sidebar>
-<div class="maindiv">
-  <div class="container-fluid">
-    <div id="eventimages" class="row">
+
+<div id="wrapper">
+        <app-sidebar></app-sidebar>
+        
+        <div id="page-content-wrapper">
+          <div id="page-content">
+    <div class="container-fluid">
+        <div class="row col-xs-12">
+    <div id="eventimages" >
       <div class="col-md-12 event_image">
         <img id="eventimage" src="/assets/images/add_img.jpg">
         <div class="centered"><h1>EVENTS-2018</h1></div>
@@ -58,8 +63,8 @@
                                 <p>
                                     Number of Registrations : <span class="bubble">{{i.college_list ? i.college_list.length : ''}}</span>
                                 </p>   
-                                <p *ngFor="let ed of i.event_details"><span class="bubble">{{ed}}</span></p> 
-                                <p>Prize Amount : <span class="bubble">{{i.prize_amount}}</span></p> 
+                                <p *ngFor="let ed of i.event_details"><span>{{ed}}</span></p> 
+                                <p>Prize Amount : <span >&#8377;{{i.prize_amount}}</span></p> 
                                 <div class="dropdown" >
                                     <p>Name of the Colleges Registered</p>
                                     <i class="fa fa-angle-down fa-1x clg_list" data-toggle="dropdown"></i>
@@ -99,4 +104,7 @@
         </div>
    </div>
 </div>
+</div>
+          </div>
+        </div>
 </div>

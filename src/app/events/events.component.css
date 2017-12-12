@@ -115,12 +115,15 @@ div p i{
     z-index: 1030;
 }
 .bubble { 
-    position: inherit; 
-    display: inline; 
+   
+    position: absolute;
     font-weight: bolder;
     background-color: rgb(162, 162, 255);
-    padding: 15px;
+    padding: 5px 13px 0;
     border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    right: 50px;
 }
   
   .bubble p {
@@ -149,4 +152,9 @@ div p i{
 .trash_btn{
     float: left;
 }
+.modal-content{
+    position: relative;
+    background-color: white;
+    color: #000;
 
+}
