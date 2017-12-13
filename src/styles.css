@@ -21,6 +21,10 @@
 }
 /* ---------------------------------------------------------------------------- */
 
+body{
+	background-color: #1E1F33;
+	color: white;
+}
 #wrapper {
 	padding-left: 220px;
 	transition: all 0.4s ease 0s;
