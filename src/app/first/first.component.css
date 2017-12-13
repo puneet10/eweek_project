@@ -1,10 +1,4 @@
-.header1{
-    background-color: black;
-    height: inherit;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-}
+
 img{
     height: 50px;
     width: 50px;
@@ -14,8 +8,8 @@ img{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(207, 206, 206);
-    color: rgba(0, 0, 0, 0.411);
+    background-color:inherit;
+    color: white;
     text-align: center;
   
     z-index: 1000;
@@ -38,6 +32,6 @@ li>a:hover{
     overflow: scroll;
     width: max-content; 
 }
-.right{
+#right{
     float: right;
 }

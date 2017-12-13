@@ -1,242 +1,254 @@
-<head>
-  <title>Bootstrap Example</title>
-<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div>
+    <title>eWeek</title>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<div class="container-fluid header1"> 
-  <div class="row">
-    <div class="col-md-8 col-sm-8">
-      <a href="#" class="navbar-brand" ><img src="../assets/images/photograph_img2.jpg"></a>
-      <h6 class="h6">subtext</h6>
-    </div>
-    <button type="button" class="navbar-toggle collapsed nav_toggle " data-toggle="collapse" data-target="#nav_bar" aria-expanded="false" aria-controls="navbar" overflow-x="hidden">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="fa fa-bars"></span>
-    </button>
-    <div class="col-md-4 col-sm-4">
-      <ul class="nav navbar-nav right" id="nav_bar" >  
-          <li>
-            <a  class="search" title="search">
-                <i class="fa fa-search" id="searchicon"></i>
-              <div class="input-group searchbox" >
-                <input type="text"   class="form-control" name="search" placeholder="search">
-                <span class="input-group-addon"><i class="fa fa-search"></i></span>
-              </div>  
-            </a>
-          </li>
-          <li class="dropdown messages-menu" id="msgicon">
-              <a  class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-envelope-o"></i>
-                <span class="label label-success">4</span>
-              </a>
-              <ul  class="dropdown-menu" id="msgddm">
-                  <li class="header">You have 4 messages</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
+    <body>
+
+
+        <nav class="navbar navbar-inverse navbar-fixed-top ">
+            <div class="container-fluid">
+                <div class="col-sm-12 col-xs-12"></div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed nav_toggle " data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                        aria-controls="navbar" overflow-x="hidden">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="fa fa-bars btn_toggle"></span>
+                        <!-- <span class="fa fa-bars"></span>
+                        <span class="fa fa-bars"></span> -->
+                    </button>
+                    <div class="navbar-brand">
+                        <a id="menu-toggle" href="#" class="glyphicon glyphicon-align-justify btn-menu toggle">
                         </a>
-                      </li>
-                      <!-- end message -->
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
+                        <!-- <img src="../assets/images/Logo_TV_2015.png" width="250%" height="10%" > -->
+                        <a id="name" href="#">
+                            <span>Name</span>
                         </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Sales Department
-                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
-                          </div>
-                          <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer2"><a routerLink="/app-inbox">See All Messages</a></li>
-                </ul>
-          </li>
-          <li class="dropdown notifications-menu" id="notifyicon">
-              <a  class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-bell-o"></i>
-                <span class="label label-warning">10</span>
-              </a>
-              <ul class="dropdown-menu" id="notifyddm">
-                  <li class="header">You have 10 notifications</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                          page and may cause design problems
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-red"></i> 5 new members joined
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your username
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
-          </li>
-          <li class="dropdown tasks-menu" id="taskicon">
-              <a class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-flag-o"></i>
-                <span class="label label-danger">9</span>
-              </a>
-              <ul class="dropdown-menu" id="taskddm">
-                  <li class="header">You have 9 tasks</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Design some buttons
-                            <small class="pull-right">20%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-aqua" id="progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">20% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Create a nice theme
-                            <small class="pull-right">40%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" id="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">40% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Some task I need to do
-                            <small class="pull-right">60%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-red" id="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">60% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Make beautiful transitions
-                            <small class="pull-right">90%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-yellow" id="progress-bar progress-bar-yellow" style="width: 90%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">90% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <!-- end task item -->
-                    </ul>
-                  </li>
-                  <li class="footer2">
-                    <a href="#">View all tasks</a>
-                  </li>
-                </ul>
-          </li>
-          <li class="dropdown"><a routerLink="" title="ADMIN" class="dropdown-toggle" id="admin_dd"><i class="fa fa-user">&nbsp;{{admin.name}}</i></a>
-            <div class="dropdown-menu" id="admin_ddm">
-              <div class="admin_ddm_content">
-                  <img src="{{admin.image}}" class="img-circle">
-                  <h3>{{admin.name}}</h3>
-              </div>
+                    </div>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse ">
+                   
+                    <!-- .................
+                     -->
+                     <ul  class="nav navbar-nav" id="right" >  
+                            <li>
+                              <a  class="search" title="search">
+                                  <i class="fa fa-search" id="searchicon"></i>
+                                <div class="input-group searchbox" >
+                                  <input type="text"   class="form-control" name="search" placeholder="search">
+                                  <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                                </div>  
+                              </a>
+                            </li>
+                            <li class="dropdown messages-menu" id="msgicon">
+                                <a  class="dropdown-toggle" data-toggle="dropdown">
+                                  <i class="fa fa-envelope-o"></i>
+                                  <span class="label label-success">4</span>
+                                </a>
+                                <ul  class="dropdown-menu" id="msgddm">
+                                    <li class="header">You have 4 messages</li>
+                                    <li>
+                                      <!-- inner menu: contains the actual data -->
+                                      <ul class="menu">
+                                        <li><!-- start message -->
+                                          <a href="#">
+                                            <div class="pull-left">
+                                              <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
+                                            </div>
+                                            <h4>
+                                              Support Team
+                                              <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                          </a>
+                                        </li>
+                                        <!-- end message -->
+                                        <li>
+                                          <a href="#">
+                                            <div class="pull-left">
+                                              <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
+                                            </div>
+                                            <h4>
+                                              AdminLTE Design Team
+                                              <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                            <div class="pull-left">
+                                              <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
+                                            </div>
+                                            <h4>
+                                              Developers
+                                              <small><i class="fa fa-clock-o"></i> Today</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                            <div class="pull-left">
+                                              <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
+                                            </div>
+                                            <h4>
+                                              Sales Department
+                                              <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                            <div class="pull-left">
+                                              <img src="/assets/images/download.jpeg" class="img-circle" alt="User Image">
+                                            </div>
+                                            <h4>
+                                              Reviewers
+                                              <small><i class="fa fa-clock-o"></i> 2 days</small>
+                                            </h4>
+                                            <p>Why not buy a new awesome theme?</p>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li class="footer2"><a routerLink="/app-inbox">See All Messages</a></li>
+                                  </ul>
+                            </li>
+                            <li class="dropdown notifications-menu" id="notifyicon">
+                                <a  class="dropdown-toggle" data-toggle="dropdown">
+                                  <i class="fa fa-bell-o"></i>
+                                  <span class="label label-warning">10</span>
+                                </a>
+                                <ul class="dropdown-menu" id="notifyddm">
+                                    <li class="header">You have 10 notifications</li>
+                                    <li>
+                                      <!-- inner menu: contains the actual data -->
+                                      <ul class="menu">
+                                        <li>
+                                          <a href="#">
+                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                                            page and may cause design problems
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                            <i class="fa fa-users text-red"></i> 5 new members joined
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                            <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#">
+                                            <i class="fa fa-user text-red"></i> You changed your username
+                                          </a>
+                                        </li>
+                                      </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">View all</a></li>
+                                  </ul>
+                            </li>
+                            <li class="dropdown tasks-menu" id="taskicon">
+                                <a class="dropdown-toggle" data-toggle="dropdown">
+                                  <i class="fa fa-flag-o"></i>
+                                  <span class="label label-danger">9</span>
+                                </a>
+                                <ul class="dropdown-menu" id="taskddm">
+                                    <li class="header">You have 9 tasks</li>
+                                    <li>
+                                      <!-- inner menu: contains the actual data -->
+                                      <ul class="menu">
+                                        <li><!-- Task item -->
+                                          <a href="#">
+                                            <h3>
+                                              Design some buttons
+                                              <small class="pull-right">20%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                              <div class="progress-bar progress-bar-aqua" id="progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="sr-only">20% Complete</span>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <!-- end task item -->
+                                        <li><!-- Task item -->
+                                          <a href="#">
+                                            <h3>
+                                              Create a nice theme
+                                              <small class="pull-right">40%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                              <div class="progress-bar progress-bar-green" id="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="sr-only">40% Complete</span>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <!-- end task item -->
+                                        <li><!-- Task item -->
+                                          <a href="#">
+                                            <h3>
+                                              Some task I need to do
+                                              <small class="pull-right">60%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                              <div class="progress-bar progress-bar-red" id="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="sr-only">60% Complete</span>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <!-- end task item -->
+                                        <li><!-- Task item -->
+                                          <a href="#">
+                                            <h3>
+                                              Make beautiful transitions
+                                              <small class="pull-right">90%</small>
+                                            </h3>
+                                            <div class="progress xs">
+                                              <div class="progress-bar progress-bar-yellow" id="progress-bar progress-bar-yellow" style="width: 90%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                                <span class="sr-only">90% Complete</span>
+                                              </div>
+                                            </div>
+                                          </a>
+                                        </li>
+                                        <!-- end task item -->
+                                      </ul>
+                                    </li>
+                                    <li class="footer2">
+                                      <a href="#">View all tasks</a>
+                                    </li>
+                                  </ul>
+                            </li>
+                            <li class="dropdown"><a routerLink="" title="ADMIN" class="dropdown-toggle" id="admin_dd"><i class="fa fa-user">&nbsp;{{admin.name}}</i></a>
+                              <div class="dropdown-menu" id="admin_ddm">
+                                <div class="admin_ddm_content">
+                                    <img src="{{admin.image}}" class="img-circle">
+                                    <h3>{{admin.name}}</h3>
+                                </div>
+                              </div>
+                            </li> 
+                        </ul>
+                </div>
+
+
             </div>
-          </li> 
-      </ul>
-    </div>
-  </div> 
-</div> 
-    <!-- </body> -->
-      <i class="fa fa-comment fa-5x chat_menu" aria-hidden="true" ></i>
-    <div class="container-fluid">
-        <div class="footer">
-          <span class="text-muted">@copyright-2018</span>
-        </div>              
-    </div>                    
+        </nav>
+                                
+        <i class="fa fa-comment fa-5x chat_menu" aria-hidden="true" ></i>
+        <div class="container-fluid">
+            <div class="footer">
+              <span class="text-muted">copyright-2018</span>
+            </div>              
+        </div>                                 
+
+    </body>
+</div>

@@ -1,9 +1,11 @@
-<app-sidebar></app-sidebar>
-<div class="maindiv">
-  <div class="container-fluid imgvid">
-    <head>
-    </head>
-    <div class="row">
+
+<div id="wrapper">
+    <app-sidebar></app-sidebar>
+    
+    <div id="page-content-wrapper">
+      <div id="page-content">
+<div class="container-fluid">
+    <div class="row col-xs-12">
       <div class="col-md-8 images">
         <h3>IMAGES</h3>
         <hr>
@@ -13,8 +15,8 @@
               <img class="img-responsive" src="{{i.img}}" alt="">
               <div class="overlay">
                 <div class="centered">
-                  <i class="fa fa-eye fa-3x imgs" [attr.src]="i.img" title="VIEW" id="the_id" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-                  <i class="fa fa-trash-o fa-3x" title="DELETE" aria-hidden="true"></i>
+                  <i class="fa fa-eye  imgs" [attr.src]="i.img" title="VIEW" id="the_id" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+                  <i class="fa fa-trash-o " title="DELETE" aria-hidden="true"></i>
                 </div>
               </div>
           </div>
@@ -46,4 +48,6 @@
       </div>
     </div>
   </div>
+</div>
+    </div>
 </div>

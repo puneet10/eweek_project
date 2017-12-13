@@ -13,14 +13,14 @@
 #sum_box h4 {
     text-align: left;
     margin-top: 0px;
-    font-size: 50px;
+    font-size: 30px;
     margin-left: 5px;
     padding-bottom: 0px;
 }
 #sum_box p{
     text-align: left;
     margin-top: 0px;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 5px;
     padding-bottom: 0px;
 }
@@ -70,7 +70,7 @@
   .item {
     position: relative;
     float: center;
-    color: blue;
+    color:white;
 }
 #donut{
     text-align: center;

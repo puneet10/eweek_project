@@ -1,7 +1,12 @@
+<div id="wrapper">
 <app-first></app-first>
-<div class="container-fluid">
-<nav class="navbar navbar-inverse navbar-fixed-left">
-  <div class="navbar-header">
+    <div id="sidebar-wrapper">
+      <body>
+        <nav id="spy">
+          <div class="container-fluid">
+            <div class="col-md-12 col-sm-12">
+              <ul class="sidebar-nav nav ">
+                <span class="sidebar-brand">
     <a class="list-group-item" href="#"><i class="fa fa-dashboard"></i>&nbsp; <i class="text">DASHBOARD</i></a>
     <div class="list-group">
         <a class="list-group-item" routerLink="/app-inbox"><i class="fa fa-inbox"></i>&nbsp;<i class="text"> INBOX</i></a>
@@ -13,7 +18,7 @@
         <a class="list-group-item" href=""><i class="fa fa-sign-out"></i>&nbsp; <i class="text">SIGN-OUT</i></a>
         <a class="list-group-item" id="Dropdm" data-toggle="collapse" data-target="#demo"><i class="fa fa-caret-down"></i>&nbsp;<i class="text">TREESET</i>
           <div id="demo" class="collapse" >
-              <ul class="list-group">
+              <ul class="list-group"> 
                   <li class="list-goup-item"><a href="#" >Sub Menu1</a></li>
                   <li class="list-goup-item"><a href="#" >Sub Menu2</a></li>
                   <li class="list-goup-item"><a href="#" >Sub Menu3</a></li>
@@ -21,6 +26,11 @@
           </div>  
         </a>  
     </div>
-  </div>
-</nav>
-</div> 
+                </span>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </body>
+    </div>
+</div>
